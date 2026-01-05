@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import UserContextProvider from './context/userContextProvider'
+import UserContextProvider from './context/UserContextProvider'
 import Display from './component/Display'
 import Input from './component/Input'
 import './App.css'
