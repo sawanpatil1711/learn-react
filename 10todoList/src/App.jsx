@@ -11,11 +11,11 @@ function App() {
 
   const addTodo = (todo) => {
     setTodos((prevTodos) => [{ id: Date.now(), ...todo }, ...prevTodos])
-  }
+  } 
 
   const updateTodo = (id, updatedTodo) => {
     setTodos((prev) => prev.map((prevTodo) => (prevTodo.id === id ? updatedTodo : prevTodo)))
-  } //jo bhi updated todo aa raha he usme sab he ki nahi id , text , completed
+  } //jo bhi updated todo aa raha he usme sab he ki new id , text , completed
 
   const deleteTodo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id))
