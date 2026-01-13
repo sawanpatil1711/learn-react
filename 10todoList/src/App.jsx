@@ -9,7 +9,7 @@ function App() {
   
   const [todos, setTodos] = useState([])
 
-  const addTodo = (todo) => {
+  const addTodo = (todo) => { //todo is an object
     setTodos((prevTodos) => [{ id: Date.now(), ...todo }, ...prevTodos])
   } 
 
